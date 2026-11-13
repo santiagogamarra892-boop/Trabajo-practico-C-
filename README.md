@@ -21,16 +21,25 @@ Cada simulación realizada intenta guardarse automáticamente en el archivo hist
 
 Organización de los archivos:
 El proyecto está dividido en módulos para separar la interfaz, los parámetros, la lógica de simulación y el registro histórico.
-Archivo	           Responsabilidad
-main.c	          |Contiene main(), controla el menú y coordina el flujo general del programa.
-parametros.h	  |Define la estructura Parametros y declara las funciones relacionadas con la carga y modificación de parámetros.
-parametros.c	  |Inicializa los valores del escenario y permite modificarlos.
-simulacion.h	  |Define la estructura Resultados y declara la función de simulación.
-simulacion.c	  |Implementa el modelo numérico del descenso y los cálculos físicos del escenario.
-interfaz.h	      |Declara las funciones de interacción y presentación por consola.
-interfaz.c	      |Implementa el menú, la lectura y validación de entradas, y la presentación de parámetros y resultados.
-historial.h	      |Declara la función encargada de guardar los resultados.
-historial.c	      |Registra los datos de cada simulación en un archivo CSV.
-Makefale	      |Contiene las reglas de compilación utilizadas actualmente.
+
+main.c: Contiene main(), controla el menú y coordina el flujo general del programa.
+
+parametros.h: Define la estructura Parametros y declara las funciones relacionadas con la carga y modificación de parámetros.
+
+parametros.c: Inicializa los valores del escenario y permite modificarlos.
+
+simulacion.h: Define la estructura Resultados y declara la función de simulación.
+
+simulacion.c: Implementa el modelo numérico del descenso y los cálculos físicos del escenario.
+
+interfaz.h: Declara las funciones de interacción y presentación por consola.
+
+interfaz.c: Implementa el menú, la lectura y validación de entradas, y la presentación de parámetros y resultados.
+
+historial.h: Declara la función encargada de guardar los resultados.
+
+historial.c: Registra los datos de cada simulación en un archivo CSV.
+
+Makefale: Contiene las reglas de compilación utilizadas actualmente.
 
 
