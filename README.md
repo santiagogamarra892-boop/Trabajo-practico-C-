@@ -40,6 +40,30 @@ historial.h: Declara la función encargada de guardar los resultados.
 
 historial.c: Registra los datos de cada simulación en un archivo CSV.
 
-Makefale: Contiene las reglas de compilación utilizadas actualmente.
+Compilación y ejecución:
+Requisitos
+- Sistema operativo Windows.
+- Visual Studio Code (opcional, para editar y compilar el código).
+- Compilador GCC (MinGW), si se desea compilar desde el código fuente.
+Opción 1: Ejecutar el programa directamente
+Si solamente se desea utilizar el simulador, no es necesario instalar Visual Studio Code ni un compilador.
+1. Descargar el archivo simulador.exe desde el repositorio.
+2. Ejecutar el archivo descargado.
+3. Se abrirá la consola con el menú principal del simulador.
+4. Seguir las instrucciones que aparecen en pantalla.
+Opción 2: Ejecutar desde Visual Studio Code
+Si se desea modificar o compilar el código fuente:
+1. Descargar o clonar el repositorio de GitHub.
+2. Abrir la carpeta del proyecto desde Visual Studio Code.
+3. Verificar que GCC (MinGW) esté instalado y configurado.
+4. Abrir la terminal integrada de VS Code.
+5. Ejecutar el siguiente comando para compilar:
+gcc -Wall -Wextra -std=c99 main.c parametros.c simulacion.c interfaz.c historial.c -o simulador.exe -lm
+6. Una vez compilado, ejecutar:
+.\simulador.exe
+
+Uso de la IA:
+Utilizamos la ia (Claude) mas que nada como una guia de la formacion del codigo ya que le preguntabamos acerca de como formar algunas partes de la estructura del codigo
+
 
 
