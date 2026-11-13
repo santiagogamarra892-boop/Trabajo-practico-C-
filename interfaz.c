@@ -98,23 +98,70 @@ void interfaz_mostrar_parametros(const Parametros *p)
     printf("Viento:                %.2f m/s\n", p->viento_ms);
 }
  
+
 void interfaz_mostrar_resultados(const Resultados *r)
 {
     printf("\n--- RESULTADOS DE LA SIMULACION ---\n");
-    printf("Fuerza de rozamiento (max): %.2f N\n",       r->fuerza_rozamiento_N);
-    printf("Desaceleracion (max):       %.2f m/s2 (%.2f g)\n", r->desaceleracion_ms2, r->desaceleracion_ms2 / 9.81);
-    printf("Angulo de inclinacion:      %.2f grados\n",  r->angulo_inclinacion_deg);
-    printf("Velocidad de impacto:       %.2f m/s\n",     r->velocidad_impacto_ms);
-    printf("Tiempo de descenso:         %.2f s\n",       r->tiempo_descenso_s);
-    printf("Desplazamiento horizontal:  %.2f m\n",       r->distancia_horizontal_m);
+
+    printf("Fuerza de rozamiento (max): %.2f N\n",
+           r->fuerza_rozamiento_N);
+
+    printf("Desaceleracion (max): %.2f m/s2\n",
+           r->desaceleracion_ms2);
+
+    printf("Angulo de inclinacion: %.2f grados\n",
+           r->angulo_inclinacion_deg);
+
+    printf("Velocidad de impacto: %.2f m/s\n",
+           r->velocidad_impacto_ms);
+
+    printf("Tiempo de descenso: %.2f s\n",
+           r->tiempo_descenso_s);
+
+    printf("Desplazamiento horizontal: %.2f m\n",
+           r->distancia_horizontal_m);
+
+    printf("\n--- CALCULOS DEL ESCENARIO ARTEMIS ---\n");
+
+    printf("Trabajo del rozamiento: %.2f J\n",
+           r->trabajo_rozamiento_J);
+
+    printf("Desaceleracion media: %.4f m/s2\n",
+           r->desaceleracion_media_ms2);
+
+    printf("Desaceleracion media: %.2f g\n",
+           r->desaceleracion_media_g);
+
+    printf("Fuerza promedio del agua: %.2f N\n",
+           r->fuerza_agua_N);
+
+    printf("Fuerza del agua respecto al peso: %.2f veces\n",
+           r->fuerza_agua_veces_peso);
+
+    printf("\nEvaluacion del angulo de entrada: ");
+
+    if (r->evaluacion_angulo == -1) {
+        printf("INFERIOR AL RANGO SEGURO: riesgo de rebote atmosferico.\n");
+    } else if (r->evaluacion_angulo == 1) {
+        printf("SUPERIOR AL RANGO SEGURO: desaceleracion excesiva.\n");
+    } else {
+        printf("DENTRO DEL RANGO SEGURO (5.5 a 7 grados).\n");
+    }
 }
+
  
 void interfaz_mostrar_creditos(void)
 {
     printf("\n--- CREDITOS ---\n");
-    printf("Simulador de amerizaje - nave Artemis\n");
-    printf("Integrantes: (completar)\n");
-    printf("Materia / Comision: (completar)\n");
+    printf("Simulador de aterrizaje - Nave Artemis\n\n");
+
+    printf("Integrantes:\n");
+    printf("- Arrua Bruno\n");
+    printf("- Gamarra Santiago\n");
+    printf("- Salica Alarcon Alejo\n\n");
+
+    printf("Materia: Algoritmos y Estructuras de Datos (AED)\n");
+    printf("Comision: C\n");
 }
  
 void interfaz_mensaje(const char *texto)
