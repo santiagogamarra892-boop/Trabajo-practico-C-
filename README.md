@@ -52,6 +52,7 @@ Si solamente se desea utilizar el simulador, no es necesario instalar Visual Stu
 2. Ejecutar el archivo descargado.
 3. Se abrirá la consola con el menú principal del simulador.
 4. Seguir las instrucciones que aparecen en pantalla.
+
 Opción 2: Ejecutar desde Visual Studio Code
 Si se desea modificar o compilar el código fuente:
 1. Descargar o clonar el repositorio de GitHub.
