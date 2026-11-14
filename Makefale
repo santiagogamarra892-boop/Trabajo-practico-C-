@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99
+OBJS = main.o parametros.o simulacion.o interfaz.o historial.o
+
+simulador: $(OBJS)
+	$(CC) $(OBJS) -o simulador -lm
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $<
+
+clean:
+	rm -f $(OBJS) simulador
+=======
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 OBJS = main.o parametros.o simulacion.o interfaz.o historial.o
@@ -9,4 +23,5 @@ simulador: $(OBJS)
 	$(CC) $(CFLAGS) -c $<
  
 clean:
+>>>>>>> origin/main
 	rm -f $(OBJS) simulador
