@@ -67,3 +67,6 @@ Uso de la IA:
 Utilizamos la ia (Claude) mas que nada como una guia de la formacion del codigo ya que le preguntabamos acerca de como formar algunas partes de la estructura del codigo. Pero para lo que mas utilizamos fue para la correccion de errores que nos arrojaba el codigo ejemplo:
 Me aparecen errores al compilar porque algunas funciones no están reconocidas. Cómo reviso si me falta incluir algún archivo .h?
 Cómo puedo revisar que todos los módulos estén conectados bien y que el programa funcione desde el menú hasta el guardado del historial?
+
+
+link del video: https://youtu.be/fUwz8n9OLtQ
