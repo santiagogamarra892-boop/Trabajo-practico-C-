@@ -1,4 +1,4 @@
-# Trabajo-practico-C-
+# Trabajo-practico-C- Branch"correccion-final"
 TRABAJO PRÁCTICO INTEGRADOR FINAL Simulador de Misiones Artemis (Lenguaje c)
 Integrantes: 
 1) Arrua Bruno (29308) COM C
